@@ -1,0 +1,33 @@
+.flow-page {
+  height: 100%;
+  width: 100%;
+}
+.flow-page .flow-canvas {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: black;
+}
+.flow-page .label {
+  position: absolute;
+  font-size: 20px;
+  background: none;
+  border: none;
+  box-shadow: none;
+  line-height: 23px;
+  color: hotpink;
+}
+.flow-page .label:hover {
+  background: none;
+  border: none;
+  color: navajowhite;
+}
+.flow-page .rotate-left {
+  transform: rotate(180deg);
+}
+.flow-page .rotate-down {
+  transform: rotate(90deg);
+}
+.flow-page .rotate-right {
+  transform: rotate(0deg);
+}

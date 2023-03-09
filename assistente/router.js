@@ -1,6 +1,6 @@
 var fs = require('fs');
 const global = require("../imports");
-var register = require('./controllers/list-leads');
+var register = require('./controllers/home');
 
 exports.routers = (app) => {
 
