@@ -7,6 +7,7 @@ import mockData from './data';
 
 import './index.css';
 import 'butterfly-dag/dist/index.css';
+import { data } from 'jquery';
 
 export default function Flow() {
   function buildCanvas() {
@@ -29,26 +30,26 @@ export default function Flow() {
       }
     });
     canvas.draw(mockData, () => {
-      console.log(canvas.getNode(1))
+
     });
+
     return canvas;
   }
-  const [coord, setCoord] = useState(false);
-  const [canvas, setCanvas] = useState(false);
 
+  const [count, setCount] = useState(0);
+
+  setInterval(() => {
+    console.log(count.getDataMap())
+  }, 5000)
   useEffect(() => {
-    setCanvas(buildCanvas());
+
+    setCount(buildCanvas())
   }, []);
-
-  useEffect(() => {
-    console.log(canvas.getEdge(1));
-  }, [coord]);
 
   return (
     <div className='flow-page'>
-      <div className="flow-canvas" id="dag-canvas" onMouseLeave={function () {
-        setCoord(true);
-      }}>
+      <button onClick={true}>Ola</button>
+      <div className="flow-canvas" id="dag-canvas">
       </div>
     </div>
   );

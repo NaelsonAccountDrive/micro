@@ -12,30 +12,9 @@ const mockData = {
       Class: Node,
       endpoints: [
         {
-          id: 'top',
-          orientation: [0, -1],
-          pos: [0.5, 0],
-          color: 'system-green',
-          Class: BaseEndpoint
-        },
-        {
-          id: 'right',
-          orientation: [1, 0],
-          pos: [0, 0.5],
-          color: 'system-green',
-          Class: BaseEndpoint
-        },
-        {
           id: 'left',
           orientation: [-1, 0],
           pos: [0, 0.5],
-          color: 'system-green',
-          Class: BaseEndpoint
-        },
-        {
-          id: 'botton',
-          orientation: [0, 1],
-          pos: [0.5, 0],
           color: 'system-green',
           Class: BaseEndpoint
         }]
